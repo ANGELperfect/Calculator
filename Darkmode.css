@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: black;
+	transition: 0.5s;
+}
+
+#dark {
+	transition: 0.5s;
+	background: white;
+	color: black;
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10%;
+}
+#dark:hover {
+	width: 120px;
+	transition: 0.5s;
+	font-size: 20px;
+}
+
+.button {
+	background-color: black;
+	color: white;
+	border:solid white;
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	margin: 2px;
+	transition: 0.5s;
+}
+
+.textView {
+	transition: 0.5s;
+	background-color: black;
+	color: white;
+	border:solid white;
+	text-align: center;
+	width: 202px;
+	margin: 5px;
+	font-size: 25px;
+	padding: 5px;
+}
+
+#zero {
+	width: 106px;
+}
+
+#equals {
+	height: 106px;
+}
+
+.main {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.button:hover {
+	color:black;
+	background:white;
+	transition: 0.5s;
+}
