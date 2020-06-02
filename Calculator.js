@@ -1,13 +1,16 @@
 var dark = false;
+var btn = $("#dark");
 $(document).ready(function(){
-    $("#dark").click(function(){
+    alert("This is just a simple calculator not scientific and can't do complicated operations , only basic ones. \n Enjoy (^_^) !\n");
+    $("div").slideDown(function(){$("#dark").animate({opacity:"100%"});});
+    btn.click(function(){
         if (dark === false){
-            document.getElementById('dark').innerText = "Light mode";
+            btn.text("Light mode");
             document.getElementById('theme').setAttribute("href","Darkmode.css");
             dark = true;
         }
         else{
-            document.getElementById('dark').innerText = "Dark mode";
+            btn.text("Dark mode");
             document.getElementById('theme').setAttribute("href","Calculator.css");
             dark = false;
         }
@@ -24,6 +27,8 @@ function insert(num){
 
 function equal(){
     document.form.textView.value = eval( document.form.textView.value);
+    if (eval( document.form.textView.value) === Infinity){document.form.textView.value = "N3iK  -_-";}
+    if (eval( document.form.textView.value) === undefined){document.form.textView.value = "";}
 }
 
 function c(){
