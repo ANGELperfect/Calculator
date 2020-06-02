@@ -1,7 +1,6 @@
 var dark = false;
 var btn = $("#dark");
 $(document).ready(function(){
-    alert("This is just a simple calculator not scientific and can't do complicated operations , only basic ones. \n Enjoy (^_^) !\n");
     $("div").slideDown(function(){$("#dark").animate({opacity:"100%"});});
     btn.click(function(){
         if (dark === false){
