@@ -1,17 +1,21 @@
 var dark = false;
 var btn = $("#dark");
 $(document).ready(function(){
-    // alert("This is just a simple calculator not scientific and can't do complicated operations , only basic ones. \n Enjoy (^_^) !\n");
+    $("img").click(function(){
+        alert("This is just a simple calculator not scientific and can't do complicated operations , only basic ones. \n Enjoy (^_^) !\n");
+    });
     $("div").fadeIn(5000,function(){$("#dark").animate({opacity:"100%"});});
     btn.click(function(){
         if (dark === false){
             btn.text("Light mode");
             $("#theme").attr("href","Darkmode.css");;
+            $("img").attr("src","infowhite.png");
             dark = true;
         }
         else{
             btn.text("Dark mode");
            $("#theme").attr("href","Calculator.css");
+           $("img").attr("src","infoblack.png");
             dark = false;
         }
 
