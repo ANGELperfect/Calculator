@@ -27,7 +27,7 @@ function insert(num){
 
 function equal(){
     document.form.textView.value = eval( document.form.textView.value);
-    if (eval( document.form.textView.value) === Infinity){document.form.textView.value = "  Can't divid  by 0";}
+    if (eval( document.form.textView.value) === Infinity){document.form.textView.value = "Can't divide by 0";}
     if (eval( document.form.textView.value) === undefined){document.form.textView.value = "";}
 }
 
