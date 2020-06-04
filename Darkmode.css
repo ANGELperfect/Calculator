@@ -19,7 +19,7 @@ html {
 	text-align: center;
 	left: 50%;
 	transform: translateX(-50%);
-	top: 80%;
+	top: 90%;
 }
 #dark:hover {
 	width: 120px;
@@ -84,7 +84,7 @@ div {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	margin-top:30px;
+	margin-top:10px;
 	animation: fill 0.5s ease forwards 5s;
 }
 
@@ -158,3 +158,11 @@ div {
 	}
 }
 
+img {
+	transition: 0.5s;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	left: 100%;
+	transform: translateX(-100%);
+}
